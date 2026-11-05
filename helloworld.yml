@@ -4,6 +4,9 @@
   connection: local
   gather_facts: false
 
+  var_files:
+    - vault.yml
+
   tasks:
     - name: Send Hello World
       ansible.builtin.uri:
